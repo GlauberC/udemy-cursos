@@ -6,29 +6,46 @@ import ReactDOM from 'react-dom'
 
 // import FamiliaSilva from './components/relacao/FamiliaSilva'
 
-import Familia from './components/relacao2/Familia'
-import Membro from './components/relacao2/Membro'
+// import Familia from './components/relacao2/Familia'
+// import Membro from './components/relacao2/Membro'
+
+// import Pai from './components/callback/Pai'
+
+import Contador from './components/contador/Contador'
+
 
 const element = document.getElementById('root')
 ReactDOM.render(
-    <div>
-
-        <Familia sobrenome = "Silva">
-            <Membro nome = "João" />
-            <Membro nome = "Paula" />
-            <Membro nome = "Kelly" />
-            <Membro nome = "Mario" />
-        </Familia>
-
-        <Familia sobrenome = "Pereira">
-            <Membro nome = "Carlos" />
-            <Membro nome = "Claudia" />
-            <Membro nome = "Marcelo" />
-            <Membro nome = "Patricia" />
-        </Familia>
-    </div>
+    <Contador/> 
 
     ,element);
+
+// const element = document.getElementById('root')
+// ReactDOM.render(
+//     <Pai/> 
+
+//     ,element);
+
+// const element = document.getElementById('root')
+// ReactDOM.render(
+//     <div>
+
+//         <Familia sobrenome = "Silva">
+//             <Membro nome = "João" />
+//             <Membro nome = "Paula" />
+//             <Membro nome = "Kelly" />
+//             <Membro nome = "Mario" />
+//         </Familia>
+
+//         <Familia sobrenome = "Pereira">
+//             <Membro nome = "Carlos" />
+//             <Membro nome = "Claudia" />
+//             <Membro nome = "Marcelo" />
+//             <Membro nome = "Patricia" />
+//         </Familia>
+//     </div>
+
+//     ,element);
 
 // const element = document.getElementById('root')
 // ReactDOM.render(
