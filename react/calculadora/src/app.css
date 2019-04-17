@@ -1,0 +1,9 @@
+main{
+    background-color: cornsilk;
+}
+.calculadora{
+    background-color: gray;
+    height: 400px;
+    width: 300px;
+    margin: 50px auto;
+}
