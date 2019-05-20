@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estudando web storage</title>
+    
+    <script>
+        function salva(){
+            if(typeof(Storage) !== 'undefined'){
+                var sobrenome = document.querySelector('.sobrenome').value
+                localStorage.setItem('lastname', sobrenome)
+                console.log("O sobrenome foi salvo")
+            }else{
+                alert('Seu navegaodor não suporta')
+            }
+        }
+
+        function apply(){
+            var classAplicar = document.querySelector('.aplicar')
+            classAplicar.textContent = localStorage.getItem("lastname")
+        }
+        // Ainda existe o sessionstorage para armazenar durante a sessão
+
+    </script>
+
+</head>
+<body>
+    <div>
+        <p>Digite Seu sobrenome</p>
+        <input type="text" name="sobrenome" class="sobrenome">
+    </div>
+    <div>
+        <button onclick="salva()">Salva no storage</button>
+        <button onclick="apply()">Aplicar Web Storage</button>
+        <p>Olá sr <span class = "aplicar"></span></p>
+    </div>
+</body>
+</html>
